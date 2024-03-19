@@ -129,4 +129,8 @@ main > article.info-card {
   .nav-bar > button {
     background-color: rgb(104, 1, 1);
   }
+
+  .nav-bar > button:hover {
+    background-color: rgb(163, 0, 0);
+  }
 }
