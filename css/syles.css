@@ -1,0 +1,105 @@
+@font-face {
+  font-family: "Retroking";
+  src: url(../fonts/Retroking.ttf);
+}
+
+* {
+  font-family: "Roboto Flex", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html > body > * {
+  font-size: 16px;
+}
+
+.wrapper {
+  max-width: 70vw;
+  margin: 0 auto;
+  background-color: rgb(255, 255, 255);
+}
+
+nav {
+  background-color: rgb(20, 20, 20);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.logo > a > img {
+  width: 120px;
+  transform: scaleX(-1);
+  vertical-align: middle;
+}
+
+.logo > h1 {
+  color: rgb(231, 231, 231);
+  margin: 0 0 0 10px;
+  font-family: "Retroking";
+  font-size: 2rem;
+  text-shadow: 1px 2px 5px rgb(177, 0, 29);
+}
+
+.nav-bar > button {
+  background-color: rgb(56, 56, 56);
+  margin: 0 8px;
+  border-radius: 8px;
+}
+
+.nav-bar > button:hover {
+  background-color: rgb(124, 21, 21);
+}
+
+.nav-bar > button > a {
+  display: block;
+  color: whitesmoke;
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 10px 30px;
+  text-decoration: none;
+}
+
+main > article.info-card {
+  margin: 30px 0;
+  display: flex;
+  align-content: center;
+}
+
+.img-box {
+  display: flex;
+  align-items: center;
+}
+
+.img-box.left {
+  margin-right: 10px;
+}
+
+.img-box.right {
+  margin-left: 10px;
+}
+
+.img-box > img {
+  width: 300px;
+}
+
+.content-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+}
+
+.content-box > p {
+  margin: 0;
+}
+
+
