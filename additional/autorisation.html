@@ -1,11 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <div class="form-holder">
+      <h2>Login</h2>
+      <form method="POST" action="https://fom.in.ua/echo">
+        <div class="email-box">
+          <label>Email</label>
+          <span class="icon"></span>
+          <input
+            class="email-input"
+            type="email"
+            name="email"
+            autocomplete="off"
+            required
+          />
+        </div>
+        <div class="pass-box">
+          <label>Password</label>
+          <span class="icon"></span>
+          <input
+            class="pass-input"
+            type="password"
+            name="password"
+            autocomplete="off"
+            required
+          />
+        </div>
+        <div class="remember-check">
+          <label><input type="checkbox" />Remember me</label>
+        </div>
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </body>
 </html>
