@@ -3,9 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SignUp</title>
+    <link rel="stylesheet" href="../css/syles.css">
 </head>
 <body>
-    
+    <nav>
+        <div class="logo">
+          <a href="../index.html"
+            ><img src="../images/ford_mustang.svg" alt="red ford mustang logo"
+          /></a>
+          <h1>Retro Auto</h1>
+        </div>
+        <div class="nav-bar">
+          <button><a href="./search.html">Search car</a></button>
+          <button><a href="#">SignUp</a></button>
+          <button><a href="./autorisation.html">SignIn</a></button>
+        </div>
+      </nav>
+    <h2>Login</h2>
+    <form method="POST" action="https://fom.in.ua/echo">
+      <div class="email-box">
+        <label>Email</label>
+        <span class="icon"></span>
+        <input
+          class="email-input"
+          type="email"
+          name="email"
+          autocomplete="off"
+          required
+        />
+      </div>
+      <div class="pass-box">
+        <label>Password</label>
+        <span class="icon"></span>
+        <input
+          class="pass-input"
+          type="password"
+          name="password"
+          autocomplete="off"
+          required
+        />
+      </div>
+      <div class="pass-box-repeat">
+        <label>Repead password</label>
+        <span class="icon"></span>
+        <input
+          class="pass-input"
+          type="password-repeat"
+          name="password-repeat"
+          autocomplete="off"
+          required
+        />
+      </div>
+
+      <button type="submit">Registrate</button>
+    </form>
+  </div>
 </body>
 </html>

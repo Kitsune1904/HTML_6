@@ -98,6 +98,12 @@ main > article.info-card {
   text-align: justify;
 }
 
+.content-box > h2 {
+  font-family: "Retroking";
+}
+
+
+
 .content-box > p {
   margin: 0;
 }
