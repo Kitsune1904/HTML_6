@@ -1,0 +1,106 @@
+@font-face {
+  font-family: "Retroking";
+  src: url(../fonts/Retroking.ttf);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  background: url(../images/background.jpeg);
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(5px);
+}
+
+body > nav {
+  align-self: stretch;
+  background-color: rgb(17, 0, 0);
+  box-shadow: 0px 10px 10px rgb(59, 0, 12);
+}
+
+.auto-form-holder,
+.registration-form-holder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  width: 400px;
+  height: 400px;
+  background-color: rgb(17, 0, 0);
+  box-shadow: 10px 20px 10px rgba(0, 0, 0, 0.692);
+}
+
+.auto-form-holder > h2,
+.registration-form-holder > h2 {
+  font-family: "Retroking";
+  color: rgb(231, 231, 231);
+  font-size: 3rem;
+}
+
+label {
+  color: rgb(231, 231, 231);
+  font-family: "Retroking";
+  font-size: 1.25rem;
+}
+
+.auto-form-holder > form,
+.registration-form-holder > form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  height: 70%;
+}
+
+.email-box,
+.pass-box,
+.pass-box-repeat {
+  display: flex;
+  justify-content: space-between;
+}
+
+.email-box > input,
+.pass-box > input,
+.pass-box-repeat > input {
+  width: 60%;
+  border-radius: 8px;
+  background-color: rgb(231, 231, 231);
+}
+
+.remember-check {
+  align-self: flex-end;
+}
+
+.remember-check > label > input {
+  margin-right: 10px;
+}
+
+.auto-form-holder > form > div,
+.registration-form-holder > form > div {
+  margin: 10px 0;
+}
+
+.auto-form-holder > form > button,
+.registration-form-holder > form > button {
+  font-family: "Retroking";
+  font-size: 1.5rem;
+  color: whitesmoke;
+  background-color: rgb(104, 1, 1);
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.auto-form-holder > form > button:hover,
+.registration-form-holder > form > button:hover {
+  background-color: rgb(163, 0, 0);
+}
+
+footer > p {
+  color: whitesmoke;
+  margin: 20px;
+  font-family: "Retroking";
+}
