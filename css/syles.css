@@ -50,13 +50,13 @@ nav {
 }
 
 .nav-bar > button {
-  background-color: rgb(56, 56, 56);
+  background-color: rgb(104, 1, 1);
   margin: 0 8px;
   border-radius: 8px;
 }
 
 .nav-bar > button:hover {
-  background-color: rgb(124, 21, 21);
+  background-color: rgb(163, 0, 0);
 }
 
 .nav-bar > button > a {
@@ -117,9 +117,8 @@ main > article.info-card {
     background-color: rgb(15, 15, 15);
   }
 
-  .logo > a > img,
-  h1 {
-    filter: drop-shadow(0 0 10px rgb(0, 0, 0));
+  .logo > h1 {
+    text-shadow: 1px 2px 5px rgb(0, 0, 0);
   }
 
   main > article.info-card > * {
@@ -127,10 +126,10 @@ main > article.info-card {
   }
 
   .nav-bar > button {
-    background-color: rgb(104, 1, 1);
+    background-color: rgb(56, 56, 56);
   }
 
   .nav-bar > button:hover {
-    background-color: rgb(163, 0, 0);
+    background-color: rgb(124, 21, 21);
   }
 }
