@@ -6,8 +6,12 @@
     <title>Document</title>
     <link rel="stylesheet" href="../css/syles.css" />
     <link rel="stylesheet" href="../css/formes-styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
+  <body class="search">
     <nav>
       <div class="logo">
         <a href="../index.html"
@@ -24,110 +28,237 @@
     <div class="search-form-holder">
       <h2>Search your car</h2>
       <form method="POST" action="https://fom.in.ua/echo">
-        <div class="main-search-holder">
-          <div class="choose-body-type">
-            <label for="bodyType">Body type</label>
-            <select name="bodyType" id="bodyType">
-              <option value="none">Body type</option>
-              <option value="Hardtop">Hardtop</option>
-              <option value="Hatchback">Hatchback</option>
-              <option value="Hot-hatch">Hot-hatch</option>
-              <option value="Coupé">Coupé</option>
-              <option value="Sedan">Sedan</option>
-              <option value="Berlinetta">Berlinetta</option>
-              <option value="Fastback">Fastback</option>
-              <option value="Targa">Targa</option>
-              <option value="Roadster">Roadster</option>
-            </select>
+        <div class="main">
+          <div class="selectors">
+            <div class="choose-body-type">
+              <label for="bodyType">Body type</label>
+              <select name="bodyType" id="bodyType">
+                <option value="none">Body type</option>
+                <option value="Hardtop">Hardtop</option>
+                <option value="Hatchback">Hatchback</option>
+                <option value="Hot-hatch">Hot-hatch</option>
+                <option value="Coupé">Coupé</option>
+                <option value="Sedan">Sedan</option>
+                <option value="Berlinetta">Berlinetta</option>
+                <option value="Fastback">Fastback</option>
+                <option value="Targa">Targa</option>
+                <option value="Roadster">Roadster</option>
+              </select>
+            </div>
+            <div class="choose-brand">
+              <label for="brand">Brand</label>
+              <select name="brand" id="brand">
+                <option value="none">Brand</option>
+                <option value="Ford">Ford</option>
+                <option value="Jaguar">Jaguar</option>
+                <option value="Nissan">Nissan</option>
+                <option value="Chevrolet">Chevrolet</option>
+                <option value="British Leyland">British Leyland</option>
+                <option value="Ferrari">Ferrari</option>
+                <option value="Porsche">Porsche</option>
+                <option value="Dodge">Dodge</option>
+                <option value="Plymouth">Plymouth</option>
+              </select>
+            </div>
+            <div class="choose-country">
+              <label for="country">Country</label>
+              <select name="country" id="country">
+                <option value="none">Country</option>
+                <option value="Japan">Japan</option>
+                <option value="Italy">Italy</option>
+                <option value="England">England</option>
+                <option value="Germany">Germany</option>
+                <option value="USA">USA</option>
+              </select>
+            </div>
           </div>
-          <div class="choose-brand">
-            <label for="brand">Brand</label>
-            <select name="brand" id="brand">
-              <option value="none">Brand</option>
-              <option value="Ford">Ford</option>
-              <option value="Jaguar">Jaguar</option>
-              <option value="Nissan">Nissan</option>
-              <option value="Chevrolet">Chevrolet</option>
-              <option value="British Leyland">British Leyland</option>
-              <option value="Ferrari">Ferrari</option>
-              <option value="Porsche">Porsche</option>
-              <option value="Dodge">Dodge</option>
-              <option value="Plymouth">Plymouth</option>
-            </select>
+          <div class="slises">
+            <div class="choose-price">
+              <label for="fromPrise">Price</label>
+              <input
+                type="number"
+                placeholder="from"
+                id="fromPrise"
+                value="10000"
+                name="fromPrise"
+              />
+              <input
+                type="number"
+                placeholder="to"
+                value="1000000"
+                name="toPrise"
+              />
+            </div>
+            <div class="choose-year">
+              <label for="fromYear">Year</label>
+              <input
+                type="number"
+                placeholder="from"
+                maxlength="4"
+                id="fromYear"
+                value="1900"
+                name="fromYear"
+              />
+              <input
+                type="number"
+                placeholder="to"
+                maxlength="4"
+                value="1999"
+                name="toYear"
+              />
+            </div>
+            <div class="choose-color">
+              <label for="color">Color</label>
+              <input type="color" id="color" name="color" />
+            </div>
           </div>
-          <div class="choose-country">
-            <label for="country">Country</label>
-            <select name="country" id="country">
-              <option value="none">Country</option>
-              <option value="Japan">Japan</option>
-              <option value="Italy">Italy</option>
-              <option value="England">England</option>
-              <option value="Germany">Germany</option>
-              <option value="USA">USA</option>
-            </select>
-          </div>
-          <div class="choose-price">
-            <label>Price</label>
-            <input type="number" placeholder="from" />
-            <p>$</p>
-            <input type="number" placeholder="to" />
-            <p>$</p>
-          </div>
-          <div class="choose-price">
-            <label>Year</label>
-            <input type="number" placeholder="from" maxlength="4" />
-            <input type="number" placeholder="to" maxlength="4" />
-          </div>
+        </div>
+        <div class="secondary">
           <div class="choose-state">
             <h2>State</h2>
-            <input type="radio" id="" name="" value="" />
-            <label for="">New</label>
-            <input type="radio" id="" name="" value="" />
-            <label for="">Used</label>
-            <input type="radio" id="" name="" value="" />
-            <label for="">In credit</label>
-            <input type="radio" id="" name="" value="" />
-            <label for="">Painted</label>
+            <div>
+              <div>
+                <input type="checkbox" id="new" name="state" value="new" />
+                <label for="new">new</label>
+              </div>
+              <div>
+                <input type="checkbox" id="used" name="state" value="used" />
+                <label for="used">used</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  id="inCredit"
+                  name="inCredit"
+                  value="inCredit"
+                />
+                <label for="inCredit">in credit</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  id="painted"
+                  name="state"
+                  value="painted"
+                />
+                <label for="painted">painted</label>
+              </div>
+            </div>
           </div>
-          <div class="choose-state">
+          <div class="choose-fuel">
             <h2>Fuel</h2>
-            <input type="radio" id="" name="" value="" />
-            <label for="">Gasoline</label>
-            <input type="radio" id="" name="" value="" />
-            <label for="">Gas</label>
-            <input type="radio" id="" name="" value="" />
-            <label for=""> Propane-butane gas / Gasoline</label>
-            <input type="radio" id="" name="" value="" />
-            <label for="">Methane gas / Gasoline</label>
-            <input type="radio" id="" name="" value="" />
-            <label for="">Diesel</label>
+            <div>
+              <div>
+                <input
+                  type="checkbox"
+                  id="gasoline"
+                  name="fuel"
+                  value="gasoline"
+                />
+                <label for="gasoline">gasoline</label>
+              </div>
+              <div>
+                <input type="checkbox" id="gas" name="fuel" value="gas" />
+                <label for="gas">gas</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  id="propane"
+                  name="fuel"
+                  value="propane"
+                />
+                <label for="propane">propane-butane gas</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  id="methane"
+                  name="fuel"
+                  value="methane"
+                />
+                <label for="methane">methane gas</label>
+              </div>
+              <div>
+                <input type="checkbox" id="diesel" name="fuel" value="diesel" />
+                <label for="diesel">diesel</label>
+              </div>
+            </div>
           </div>
           <div class="choose-transmission">
             <h2>Transmission</h2>
-            <input type="radio" id="" name="" value="" />
-            <label for="">Automatic </label>
-            <input type="radio" id="" name="" value="" />
-            <label for="">Manual </label>
-            <input type="radio" id="" name="" value="" />
-            <label for="">Variator</label>
-          </div>
-          <div class="choose-color">
-            <label for="color">Color</label>
-            <input type="color" id="color" />
+            <div>
+              <div>
+                <input
+                  type="checkbox"
+                  id="automatic"
+                  name="transmission"
+                  value="automatic"
+                />
+                <label for="automatic">automatic</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  id="manual"
+                  name="transmission"
+                  value="manual"
+                />
+                <label for="manual">manual</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  id="variator"
+                  name="transmission"
+                  value="variator"
+                />
+                <label for="variator">variator</label>
+              </div>
+            </div>
           </div>
           <div class="additional">
             <h2>Additional</h2>
-            <input type="radio" id="" name="" value="" />
-            <label for="">conditioner </label>
-            <input type="radio" id="" name="" value="" />
-            <label for="">stepney </label>
-            <input type="radio" id="" name="" value="" />
-            <label for="">hatchway</label>
-            <input type="radio" id="" name="" value="" />
-            <label for="">fridge</label>
+            <div>
+              <div>
+                <input
+                  type="checkbox"
+                  id="conditioner"
+                  name="additional"
+                  value="conditioner"
+                />
+                <label for="conditioner">conditioner</label
+                ><input
+                  type="checkbox"
+                  id="stepney"
+                  name="additional"
+                  value="stepney"
+                />
+                <label for="stepney">stepney</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  id="hatchway"
+                  name="additional"
+                  value="hatchway"
+                />
+                <label for="hatchway">hatchway</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  id="fridge"
+                  name="additional"
+                  value="fridge"
+                />
+                <label for="fridge">fridge</label>
+              </div>
+            </div>
           </div>
         </div>
         <button type="submit">Find</button>
+        <button type="reset">Reset</button>
       </form>
     </div>
     <footer>

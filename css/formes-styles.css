@@ -10,38 +10,50 @@ body {
   align-items: center;
   height: 100vh;
   background: url(../images/background-light.jpeg);
-  background-size: cover;
   background-position: center;
+  background-size: cover;
 }
 
 body > nav {
   align-self: stretch;
+  margin-bottom: 10px;
   box-shadow: 0px 5px 10px rgb(8, 8, 8);
 }
 
 .auto-form-holder,
-.registration-form-holder {
+.registration-form-holder,
+.search-form-holder {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   border-radius: 10px;
+  padding: 0 20px 10px;
   width: 400px;
   height: 400px;
-  background-color: transparent;
-  backdrop-filter: blur(10px);
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.700);
+  background-color: rgb(20, 20, 20);
+  backdrop-filter: blur(20px);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.7);
+}
+
+.search-form-holder {
+  width: min-content;
+  height: fit-content;
 }
 
 .auto-form-holder > h2,
-.registration-form-holder > h2 {
+.registration-form-holder > h2,
+.search-form-holder > h2 {
   font-family: "Retroking";
   color: rgb(231, 231, 231);
   text-shadow: 2px 2px 5px rgb(0, 0, 0);
   font-size: 3rem;
 }
 
-label {
+label,
+.search-form-holder > form > div > h2,
+.secondary > div > h2,
+.secondary > .choose-color > label {
   color: rgb(231, 231, 231);
   text-shadow: 1px 2px 5px rgb(0, 0, 0);
   font-family: "Retroking";
@@ -49,12 +61,11 @@ label {
 }
 
 .auto-form-holder > form,
-.registration-form-holder > form {
+.registration-form-holder > form,
+.search-form-holder > form {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 80%;
-  height: 70%;
 }
 
 .email-box,
@@ -62,6 +73,33 @@ label {
 .pass-box-repeat {
   display: flex;
   justify-content: space-between;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.selectors {
+  margin-right: 20px;
+}
+
+.selectors > div {
+  display: flex;
+  margin: 10px 0;
+}
+
+.selectors > div label {
+  margin-right: 5px;
+  width: 100px;
+}
+
+.selectors select {
+  width: 100px;
+  border-radius: 8px;
+  background-color: rgb(231, 231, 231);
+  padding: 5px;
 }
 
 .email-box > input,
@@ -73,6 +111,41 @@ label {
   padding-left: 10px;
 }
 
+.choose-price,
+.choose-year,
+.choose-color {
+  display: flex;
+  align-items: center;
+}
+
+.choose-price > label,
+.choose-year > label,
+.choose-color > label {
+  margin-right: 10px;
+  width: 50px;
+}
+
+.choose-price > input,
+.choose-year > input,
+.choose-color > input,
+.selectors select {
+  margin: 5px 5px;
+  width: 100px;
+  border-radius: 8px;
+  background-color: rgb(231, 231, 231);
+  padding: 5px;
+}
+
+.choose-color > input {
+  padding: 0;
+  width: 210px
+}
+
+.choose-price > p,
+.choose-year > p {
+  color: whitesmoke;
+}
+
 .remember-check {
   align-self: flex-end;
 }
@@ -81,13 +154,30 @@ label {
   margin-right: 10px;
 }
 
+.secondary > div > div > div > label {
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 1rem;
+  margin: 0 50px 0 10px;
+}
+
+.secondary > div > div {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.secondary > div > div > div {
+  margin: 10px 0;
+}
+
 .auto-form-holder > form > div,
 .registration-form-holder > form > div {
   margin: 10px 0;
 }
 
 .auto-form-holder > form > button,
-.registration-form-holder > form > button {
+.registration-form-holder > form > button,
+.search-form-holder > form > button {
   font-family: "Retroking";
   font-size: 1.5rem;
   color: whitesmoke;
@@ -97,14 +187,17 @@ label {
 }
 
 .auto-form-holder > form > button:hover,
-.registration-form-holder > form > button:hover {
+.registration-form-holder > form > button:hover,
+.search-form-holder > form > button:hover {
   background-color: rgb(163, 0, 0);
+  cursor: pointer;
 }
 
 footer > p {
   color: whitesmoke;
-  margin: 20px;
+  margin: 20px 0;
   font-family: "Retroking";
+  align-self: flex-end;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -114,24 +207,15 @@ footer > p {
     background-position: center;
   }
 
-  .auto-form-holder > h2,
-  .registration-form-holder > h2 {
-    text-shadow: 2px 2px 5px rgb(0, 0, 0);
-    font-size: 3rem;
-  }
-
-  label {
-    text-shadow: 2px 2px 5px rgb(0, 0, 0);
-  }
-
   .auto-form-holder > form > button,
-  .registration-form-holder > form > button {
+  .registration-form-holder > form > button,
+  .search-form-holder > form > button {
     background-color: rgb(56, 56, 56);
   }
 
   .auto-form-holder > form > button:hover,
-  .registration-form-holder > form > button:hover {
+  .registration-form-holder > form > button:hover,
+  .search-form-holder > form > button:hover {
     background-color: rgb(124, 21, 21);
   }
 }
-
