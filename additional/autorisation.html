@@ -25,33 +25,37 @@
       <h2>SignIn</h2>
       <form method="POST" action="https://fom.in.ua/echo">
         <div class="email-box">
-          <label>Email</label>
+          <label for="email">Email</label>
           <input
             class="email-input"
             type="email"
             name="email"
+            id="email"
             autocomplete="off"
+            placeholder="youremail@gmail.com"
             required
           />
         </div>
         <div class="pass-box">
-          <label>Password</label>
+          <label for="password">Password</label>
           <input
             class="pass-input"
             type="password"
             name="password"
+            id="password"
             autocomplete="off"
+            placeholder="password"
             required
           />
         </div>
         <div class="remember-check">
-          <label><input type="checkbox" name="checkbox"/>Remember me</label>
+          <label><input type="checkbox" name="checkbox" />Remember me</label>
         </div>
         <button type="submit">Submit</button>
       </form>
     </div>
     <footer>
-      <p>Design for Retro Car</p>
+      <p>Designed for Retro Auto</p>
     </footer>
   </body>
 </html>

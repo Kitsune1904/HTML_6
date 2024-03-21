@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="../css/syles.css" />
+    <link rel="stylesheet" href="../css/formes-styles.css" />
   </head>
   <body>
     <nav>
@@ -20,5 +21,117 @@
         <button><a href="./autorisation.html">SignIn</a></button>
       </div>
     </nav>
+    <div class="search-form-holder">
+      <h2>Search your car</h2>
+      <form method="POST" action="https://fom.in.ua/echo">
+        <div class="main-search-holder">
+          <div class="choose-body-type">
+            <label for="bodyType">Body type</label>
+            <select name="bodyType" id="bodyType">
+              <option value="none">Body type</option>
+              <option value="Hardtop">Hardtop</option>
+              <option value="Hatchback">Hatchback</option>
+              <option value="Hot-hatch">Hot-hatch</option>
+              <option value="Coupé">Coupé</option>
+              <option value="Sedan">Sedan</option>
+              <option value="Berlinetta">Berlinetta</option>
+              <option value="Fastback">Fastback</option>
+              <option value="Targa">Targa</option>
+              <option value="Roadster">Roadster</option>
+            </select>
+          </div>
+          <div class="choose-brand">
+            <label for="brand">Brand</label>
+            <select name="brand" id="brand">
+              <option value="none">Brand</option>
+              <option value="Ford">Ford</option>
+              <option value="Jaguar">Jaguar</option>
+              <option value="Nissan">Nissan</option>
+              <option value="Chevrolet">Chevrolet</option>
+              <option value="British Leyland">British Leyland</option>
+              <option value="Ferrari">Ferrari</option>
+              <option value="Porsche">Porsche</option>
+              <option value="Dodge">Dodge</option>
+              <option value="Plymouth">Plymouth</option>
+            </select>
+          </div>
+          <div class="choose-country">
+            <label for="country">Country</label>
+            <select name="country" id="country">
+              <option value="none">Country</option>
+              <option value="Japan">Japan</option>
+              <option value="Italy">Italy</option>
+              <option value="England">England</option>
+              <option value="Germany">Germany</option>
+              <option value="USA">USA</option>
+            </select>
+          </div>
+          <div class="choose-price">
+            <label>Price</label>
+            <input type="number" placeholder="from" />
+            <p>$</p>
+            <input type="number" placeholder="to" />
+            <p>$</p>
+          </div>
+          <div class="choose-price">
+            <label>Year</label>
+            <input type="number" placeholder="from" maxlength="4" />
+            <input type="number" placeholder="to" maxlength="4" />
+          </div>
+          <div class="choose-state">
+            <h2>State</h2>
+            <input type="radio" id="" name="" value="" />
+            <label for="">New</label>
+            <input type="radio" id="" name="" value="" />
+            <label for="">Used</label>
+            <input type="radio" id="" name="" value="" />
+            <label for="">In credit</label>
+            <input type="radio" id="" name="" value="" />
+            <label for="">Painted</label>
+          </div>
+          <div class="choose-state">
+            <h2>Fuel</h2>
+            <input type="radio" id="" name="" value="" />
+            <label for="">Gasoline</label>
+            <input type="radio" id="" name="" value="" />
+            <label for="">Gas</label>
+            <input type="radio" id="" name="" value="" />
+            <label for=""> Propane-butane gas / Gasoline</label>
+            <input type="radio" id="" name="" value="" />
+            <label for="">Methane gas / Gasoline</label>
+            <input type="radio" id="" name="" value="" />
+            <label for="">Diesel</label>
+          </div>
+          <div class="choose-transmission">
+            <h2>Transmission</h2>
+            <input type="radio" id="" name="" value="" />
+            <label for="">Automatic </label>
+            <input type="radio" id="" name="" value="" />
+            <label for="">Manual </label>
+            <input type="radio" id="" name="" value="" />
+            <label for="">Variator</label>
+          </div>
+          <div class="choose-color">
+            <label for="color">Color</label>
+            <input type="color" id="color" />
+          </div>
+          <div class="additional">
+            <h2>Additional</h2>
+            <input type="radio" id="" name="" value="" />
+            <label for="">conditioner </label>
+            <input type="radio" id="" name="" value="" />
+            <label for="">stepney </label>
+            <input type="radio" id="" name="" value="" />
+            <label for="">hatchway</label>
+            <input type="radio" id="" name="" value="" />
+            <label for="">fridge</label>
+          </div>
+        </div>
+        <button type="submit">Find</button>
+      </form>
+    </div>
+    <footer>
+      <p>Designed for Retro Auto</p>
+    </footer>
   </body>
 </html>
