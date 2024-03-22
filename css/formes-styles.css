@@ -35,7 +35,6 @@ body > nav {
   width: 400px;
   height: 400px;
   background-color: rgb(20, 20, 20);
-  backdrop-filter: blur(20px);
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.7);
 }
 
