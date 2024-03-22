@@ -182,19 +182,29 @@ label,
 .secondary > div > div > div > label {
   font-family: "Roboto Flex", sans-serif;
   font-size: 1rem;
-  margin: 0 50px 0 10px;
+  margin-left: 10px;
+}
+
+/* 11 */
+.secondary > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-top: 1px solid whitesmoke;
 }
 
 /* 12 */
 .secondary > div > div {
   display: flex;
-  justify-content: space-evenly;
   flex-wrap: wrap;
+  width: 360px;
+  justify-content: space-between;
 }
 
 /* 13 */
 .secondary > div > div > div {
   margin: 10px 0;
+  width: 180px;
 }
 
 /* 12 every */
