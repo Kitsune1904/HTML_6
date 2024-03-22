@@ -3,6 +3,7 @@
   src: url(../fonts/Retroking.ttf);
 }
 
+/* 1 */
 body {
   display: flex;
   flex-direction: column;
@@ -14,12 +15,14 @@ body {
   background-size: cover;
 }
 
+/* 2 */
 body > nav {
   align-self: stretch;
   margin-bottom: 10px;
   box-shadow: 0px 5px 10px rgb(8, 8, 8);
 }
 
+/* 10 every */
 .auto-form-holder,
 .registration-form-holder,
 .search-form-holder {
@@ -36,11 +39,13 @@ body > nav {
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.7);
 }
 
+/* 10 */
 .search-form-holder {
   width: min-content;
   height: fit-content;
 }
 
+/* 11 every */
 .auto-form-holder > h2,
 .registration-form-holder > h2,
 .search-form-holder > h2 {
@@ -50,9 +55,13 @@ body > nav {
   font-size: 3rem;
 }
 
+/* 1 */
 label,
+/* 13 */
 .search-form-holder > form > div > h2,
+/* 12 */
 .secondary > div > h2,
+/* 21 */
 .secondary > .choose-color > label {
   color: rgb(231, 231, 231);
   text-shadow: 1px 2px 5px rgb(0, 0, 0);
@@ -60,6 +69,7 @@ label,
   font-size: 1.3rem;
 }
 
+/* 11 every */
 .auto-form-holder > form,
 .registration-form-holder > form,
 .search-form-holder > form {
@@ -68,6 +78,7 @@ label,
   justify-content: center;
 }
 
+/* 10 every */
 .email-box,
 .pass-box,
 .pass-box-repeat {
@@ -75,26 +86,31 @@ label,
   justify-content: space-between;
 }
 
+/* 1 */
 .main {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
+/* 10 */
 .selectors {
   margin-right: 20px;
 }
 
+/* 11 */
 .selectors > div {
   display: flex;
   margin: 10px 0;
 }
 
+/* 12 */
 .selectors > div label {
   margin-right: 5px;
   width: 100px;
 }
 
+/* 11 */
 .selectors select {
   width: 100px;
   border-radius: 8px;
@@ -102,6 +118,7 @@ label,
   padding: 5px;
 }
 
+/* 11 every */
 .email-box > input,
 .pass-box > input,
 .pass-box-repeat > input {
@@ -111,6 +128,7 @@ label,
   padding-left: 10px;
 }
 
+/* 10 every */
 .choose-price,
 .choose-year,
 .choose-color {
@@ -118,6 +136,7 @@ label,
   align-items: center;
 }
 
+/* 11 every */
 .choose-price > label,
 .choose-year > label,
 .choose-color > label {
@@ -125,6 +144,7 @@ label,
   width: 50px;
 }
 
+/* 11 every */
 .choose-price > input,
 .choose-year > input,
 .choose-color > input,
@@ -136,45 +156,54 @@ label,
   padding: 5px;
 }
 
+/* 11 */
 .choose-color > input {
   padding: 0;
   width: 210px
 }
 
+/* 11 every */
 .choose-price > p,
 .choose-year > p {
   color: whitesmoke;
 }
 
+/* 10 */
 .remember-check {
   align-self: flex-end;
 }
 
+/* 12 */
 .remember-check > label > input {
   margin-right: 10px;
 }
 
+/* 14 */
 .secondary > div > div > div > label {
   font-family: "Roboto Flex", sans-serif;
   font-size: 1rem;
   margin: 0 50px 0 10px;
 }
 
+/* 12 */
 .secondary > div > div {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
+/* 13 */
 .secondary > div > div > div {
   margin: 10px 0;
 }
 
+/* 12 every */
 .auto-form-holder > form > div,
 .registration-form-holder > form > div {
   margin: 10px 0;
 }
 
+/* 12 every */
 .auto-form-holder > form > button,
 .registration-form-holder > form > button,
 .search-form-holder > form > button {
@@ -186,6 +215,7 @@ label,
   margin-top: 20px;
 }
 
+/* 22 every */
 .auto-form-holder > form > button:hover,
 .registration-form-holder > form > button:hover,
 .search-form-holder > form > button:hover {
@@ -193,6 +223,7 @@ label,
   cursor: pointer;
 }
 
+/* 2 */
 footer > p {
   color: whitesmoke;
   margin: 20px 0;
@@ -201,18 +232,21 @@ footer > p {
 }
 
 @media (prefers-color-scheme: dark) {
+  /* 1 */
   body {
     background: url(../images/background-dark.png);
     background-size: cover;
     background-position: center;
   }
 
+  /* 12 every */
   .auto-form-holder > form > button,
   .registration-form-holder > form > button,
   .search-form-holder > form > button {
     background-color: rgb(56, 56, 56);
   }
 
+  /* 22 every */
   .auto-form-holder > form > button:hover,
   .registration-form-holder > form > button:hover,
   .search-form-holder > form > button:hover {
