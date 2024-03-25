@@ -3,20 +3,6 @@
   src: url(../fonts/Retroking.ttf);
 }
 
-/* 0 */
-* {
-  font-family: "Roboto Flex", sans-serif;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
-
-/* 2 */
-html > body > * {
-  font-size: 16px;
-}
-
 /* 10 */
 .wrapper {
   max-width: 70vw;
@@ -57,26 +43,26 @@ nav {
 }
 
 /* 11 */
-.nav-bar > button {
-  background-color: rgb(104, 1, 1);
+.nav-bar > a {
+  display: inline-block;
+  padding: 10px 30px;
   margin: 0 8px;
+  width: 130px;
   border-radius: 8px;
+  background-color: rgb(104, 1, 1);
+  text-align: center;
+  color: whitesmoke;
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-decoration: none;
 }
 
 /* 21 */
-.nav-bar > button:hover {
+.nav-bar > a:hover {
   background-color: rgb(163, 0, 0);
 }
 
-/* 12 */
-.nav-bar > button > a {
-  display: block;
-  color: whitesmoke;
-  font-weight: 700;
-  font-size: 0.85rem;
-  padding: 10px 30px;
-  text-decoration: none;
-}
 
 /* 12 */
 main > article.info-card {
@@ -117,11 +103,254 @@ main > article.info-card {
 /* 11 */
 .content-box > h2 {
   font-family: "Retroking";
+  font-size: 2rem;
+  margin-bottom: 10px;
 }
 
 /* 11 */
 .content-box > p {
-  margin: 0;
+  font-size: 1.2rem;
+  padding-bottom: 10px;
+  line-height: 1.5rem;
+}
+
+/* 1 */
+body.additional {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  background: url(../images/background-light.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+
+/* 2 */
+body.additional > nav {
+  align-self: stretch;
+  margin-bottom: 10px;
+  box-shadow: 0px 5px 10px rgb(8, 8, 8);
+}
+
+/* 10 every */
+.auto-form-holder,
+.registration-form-holder,
+.search-form-holder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 0 20px 10px;
+  width: 400px;
+  height: 400px;
+  background-color: rgb(20, 20, 20);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.7);
+}
+
+/* 10 */
+.search-form-holder {
+  width: min-content;
+  height: fit-content;
+}
+
+/* 11 every */
+.auto-form-holder > h2,
+.registration-form-holder > h2,
+.search-form-holder > h2 {
+  font-family: "Retroking";
+  color: rgb(231, 231, 231);
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
+  font-size: 3rem;
+  padding: 10px;
+}
+
+/* 1 */
+label,
+/* 13 */
+.search-form-holder > form > div > h2,
+/* 12 */
+.secondary > div > h2,
+/* 21 */
+.secondary > .choose-color > label {
+  color: rgb(231, 231, 231);
+  text-shadow: 1px 2px 5px rgb(0, 0, 0);
+  font-family: "Retroking";
+  font-size: 1.3rem;
+  padding: 10px 0;
+}
+
+/* 11 every */
+.auto-form-holder > form,
+.registration-form-holder > form,
+.search-form-holder > form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* 10 every */
+.email-box,
+.pass-box,
+.pass-box-repeat {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 1 */
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* 10 */
+.selectors {
+  margin-right: 20px;
+}
+
+/* 11 */
+.selectors > div {
+  display: flex;
+  margin: 10px 0;
+}
+
+/* 12 */
+.selectors > div label {
+  margin-right: 5px;
+  width: 100px;
+}
+
+/* 11 */
+.selectors select {
+  width: 100px;
+  border-radius: 8px;
+  background-color: rgb(231, 231, 231);
+  padding: 5px;
+}
+
+/* 11 every */
+.email-box > input,
+.pass-box > input,
+.pass-box-repeat > input {
+  width: 60%;
+  border-radius: 8px;
+  background-color: rgb(231, 231, 231);
+  padding-left: 10px;
+}
+
+/* 10 every */
+.choose-price,
+.choose-year,
+.choose-color {
+  display: flex;
+  align-items: center;
+}
+
+/* 11 every */
+.choose-price > label,
+.choose-year > label,
+.choose-color > label {
+  margin-right: 10px;
+  width: 50px;
+}
+
+/* 11 every */
+.choose-price > input,
+.choose-year > input,
+.choose-color > input,
+.selectors select {
+  margin: 5px 5px;
+  width: 100px;
+  border-radius: 8px;
+  background-color: rgb(231, 231, 231);
+  padding: 5px;
+}
+
+/* 11 */
+.choose-color > input {
+  padding: 0;
+  width: 210px
+}
+
+/* 11 every */
+.choose-price > p,
+.choose-year > p {
+  color: whitesmoke;
+}
+
+/* 10 */
+.remember-check {
+  align-self: flex-end;
+}
+
+/* 12 */
+.remember-check > label > input {
+  margin-right: 10px;
+}
+
+/* 14 */
+.secondary > div > div > div > label {
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 1rem;
+  margin-left: 10px;
+}
+
+/* 11 */
+.secondary > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-top: 1px solid whitesmoke;
+}
+
+/* 12 */
+.secondary > div > div {
+  display: flex;
+  flex-wrap: wrap;
+  width: 360px;
+  justify-content: space-between;
+}
+
+/* 13 */
+.secondary > div > div > div {
+  margin: 10px 0;
+  width: 180px;
+}
+
+/* 12 every */
+.auto-form-holder > form > div,
+.registration-form-holder > form > div {
+  margin: 10px 0;
+}
+
+/* 12 every */
+.auto-form-holder > form > button,
+.registration-form-holder > form > button,
+.search-form-holder > form > button {
+  font-family: "Retroking";
+  font-size: 1.5rem;
+  color: whitesmoke;
+  background-color: rgb(104, 1, 1);
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+/* 22 every */
+.auto-form-holder > form > button:hover,
+.registration-form-holder > form > button:hover,
+.search-form-holder > form > button:hover {
+  background-color: rgb(163, 0, 0);
+  cursor: pointer;
+}
+
+/* 2 */
+footer > p {
+  color: whitesmoke;
+  margin: 20px 0;
+  font-family: "Retroking";
+  align-self: flex-end;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -156,6 +385,26 @@ main > article.info-card {
 
   /* 21 */
   .nav-bar > button:hover {
+    background-color: rgb(124, 21, 21);
+  }
+
+  body.additional  {
+    background: url(../images/background-dark.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+  /* 12 every */
+  .auto-form-holder > form > button,
+  .registration-form-holder > form > button,
+  .search-form-holder > form > button {
+    background-color: rgb(56, 56, 56);
+  }
+
+  /* 22 every */
+  .auto-form-holder > form > button:hover,
+  .registration-form-holder > form > button:hover,
+  .search-form-holder > form > button:hover {
     background-color: rgb(124, 21, 21);
   }
 }
