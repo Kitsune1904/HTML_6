@@ -103,7 +103,8 @@ main > article.info-card {
 
 /* 11 */
 .content-box > h2,
-.catalog > h2 {
+.catalog > h2,
+footer > h2 {
   font-family: "Retroking";
   font-size: 2rem;
   margin-bottom: 10px;
@@ -125,7 +126,8 @@ main > article.info-card {
 }
 
 /* 11 */
-.catalog > h2 {
+.catalog > h2,
+footer > h2 {
   text-align: center;
 }
 
@@ -440,7 +442,8 @@ footer > p {
 
   /* 12 */
   main > article.info-card > *,
-  .catalog > * {
+  .catalog > *,
+  footer > h2 {
     color: rgb(202, 202, 202);
   }
 
