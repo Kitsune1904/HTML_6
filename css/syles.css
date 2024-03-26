@@ -16,7 +16,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 30px;
+  padding: 2% 3%;
 }
 
 /* 10 */
@@ -63,10 +63,9 @@ nav {
   background-color: rgb(163, 0, 0);
 }
 
-
 /* 12 */
 main > article.info-card {
-  margin: 30px 0;
+  margin: 3% 0;
   display: flex;
   align-content: center;
 }
@@ -75,21 +74,22 @@ main > article.info-card {
 .img-box {
   display: flex;
   align-items: center;
+  width: 30%;
 }
 
 /* 20 */
 .img-box.left {
-  margin-right: 10px;
+  margin-right: 2%;
 }
 
 /* 20 */
 .img-box.right {
-  margin-left: 10px;
+  margin-left: 2%;
 }
 
 /* 11 */
 .img-box > img {
-  width: 300px;
+  width: 100%;
 }
 
 /* 10 */
@@ -98,20 +98,85 @@ main > article.info-card {
   flex-direction: column;
   justify-content: center;
   text-align: justify;
+  width: 70%;
 }
 
 /* 11 */
-.content-box > h2 {
+.content-box > h2,
+.catalog > h2 {
   font-family: "Retroking";
   font-size: 2rem;
   margin-bottom: 10px;
 }
 
 /* 11 */
-.content-box > p {
+.content-box > p,
+.card-description > p {
   font-size: 1.2rem;
-  padding-bottom: 10px;
+  padding-bottom: 2%;
   line-height: 1.5rem;
+}
+
+/* 10 */
+.catalog {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* 11 */
+.catalog > h2 {
+  text-align: center;
+}
+
+/* 10 */
+.main-line,
+.additional-line {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* 10 */
+.catalog__card {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 3%;
+}
+
+/* 11 */
+.catalog__card > img {
+  width: 100%;
+}
+
+/* 10 */
+.card-price {
+  display: flex;
+  flex-direction: column;
+  margin: 2% 0;
+}
+
+/* 10 */
+.card-price > * {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 2% 0;
+}
+
+/* 11 */
+.card-price > h3 {
+  font-style: italic;
+}
+
+/* 11 */
+.card-price > p {
+  align-self: end;
+}
+
+/* 11 */
+.card-description > p {
+  text-align: justify;
 }
 
 /* 1 */
@@ -129,7 +194,7 @@ body.additional {
 /* 2 */
 body.additional > nav {
   align-self: stretch;
-  margin-bottom: 10px;
+  margin-bottom: 2%;
   box-shadow: 0px 5px 10px rgb(8, 8, 8);
 }
 
@@ -142,7 +207,7 @@ body.additional > nav {
   align-items: center;
   justify-content: center;
   border-radius: 10px;
-  padding: 0 20px 10px;
+  padding: 0 2% 1%;
   width: 400px;
   height: 400px;
   background-color: rgb(20, 20, 20);
@@ -163,7 +228,7 @@ body.additional > nav {
   color: rgb(231, 231, 231);
   text-shadow: 2px 2px 5px rgb(0, 0, 0);
   font-size: 3rem;
-  padding: 10px;
+  padding: 4%;
 }
 
 /* 1 */
@@ -178,7 +243,7 @@ label,
   text-shadow: 1px 2px 5px rgb(0, 0, 0);
   font-family: "Retroking";
   font-size: 1.3rem;
-  padding: 10px 0;
+  padding: 2% 0;
 }
 
 /* 11 every */
@@ -207,13 +272,13 @@ label,
 
 /* 10 */
 .selectors {
-  margin-right: 20px;
+  margin-right: 2%;
 }
 
 /* 11 */
 .selectors > div {
   display: flex;
-  margin: 10px 0;
+  margin: 4% 0;
 }
 
 /* 12 */
@@ -271,7 +336,7 @@ label,
 /* 11 */
 .choose-color > input {
   padding: 0;
-  width: 210px
+  width: 210px;
 }
 
 /* 11 every */
@@ -374,7 +439,8 @@ footer > p {
   }
 
   /* 12 */
-  main > article.info-card > * {
+  main > article.info-card > *,
+  .catalog > * {
     color: rgb(202, 202, 202);
   }
 
@@ -388,7 +454,7 @@ footer > p {
     background-color: rgb(124, 21, 21);
   }
 
-  body.additional  {
+  body.additional {
     background: url(../images/background-dark.png);
     background-size: cover;
     background-position: center;
