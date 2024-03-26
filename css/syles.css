@@ -19,6 +19,12 @@ nav {
   padding: 2% 3%;
 }
 
+.start-pg {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 /* 10 */
 .logo {
   display: flex;
@@ -61,6 +67,10 @@ nav {
 /* 21 */
 .nav-bar > a:hover {
   background-color: rgb(163, 0, 0);
+}
+
+main {
+  margin-top: 10%;
 }
 
 /* 12 */
@@ -107,7 +117,7 @@ main > article.info-card {
 footer > h2 {
   font-family: "Retroking";
   font-size: 3rem;
-  margin-bottom: 10px;
+  margin: 3% 0;
 }
 
 /* 11 */
@@ -144,7 +154,8 @@ footer > h2 {
   display: flex;
   flex-direction: column;
   width: 50%;
-  margin: 3%;
+  border: 1px solid black;
+  padding: 3%;
 }
 
 /* 11 */
@@ -168,12 +179,13 @@ footer > h2 {
 
 /* 11 */
 .card-price > h3 {
-  font-style: italic;
+  text-shadow: 1px 5px 5px rgb(73, 73, 73);
 }
 
 /* 11 */
 .card-price > p {
   align-self: end;
+  color: brown;
 }
 
 /* 11 */
@@ -447,6 +459,13 @@ footer > p {
     color: rgb(202, 202, 202);
   }
 
+  .content-box > h2,
+  .catalog > h2,
+  footer > h2,
+  .card-price > h3 {
+    text-shadow: 1px 5px 5px rgb(97, 0, 0);
+  }
+
   /* 11 */
   .nav-bar > button {
     background-color: rgb(56, 56, 56);
@@ -455,6 +474,10 @@ footer > p {
   /* 21 */
   .nav-bar > button:hover {
     background-color: rgb(124, 21, 21);
+  }
+
+  .catalog__card {
+    border: 1px solid whitesmoke;
   }
 
   body.additional {
