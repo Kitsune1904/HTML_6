@@ -19,6 +19,7 @@ nav {
   padding: 2% 3%;
 }
 
+/* 10 */
 .start-pg {
   position: fixed;
   top: 0;
@@ -69,6 +70,7 @@ nav {
   background-color: rgb(163, 0, 0);
 }
 
+/* 1 */
 main {
   margin-top: 10%;
 }
@@ -159,15 +161,18 @@ footer > h2 {
   border-radius: 8px;
 }
 
+/* 20 */
 .catalog__card.left,
 .catalog__card.right {
   margin: 2% 0;
 }
 
+/* 20 */
 .catalog__card.left {
   margin-right: 2%;
 }
 
+/* 20 */
 .catalog__card.right {
   margin-left: 2%;
 }
@@ -477,6 +482,7 @@ footer > p {
     color: rgb(230, 230, 230);
   }
 
+  /* 11 и 2 */
   .content-box > h2,
   .catalog > h2,
   footer > h2,
@@ -484,6 +490,7 @@ footer > p {
     text-shadow: 1px 5px 5px rgb(97, 0, 0);
   }
 
+  /* 10 */
   .catalog__card {
     background-color: rgb(31, 31, 31);
   }
@@ -498,6 +505,7 @@ footer > p {
     background-color: rgb(124, 21, 21);
   }
 
+  /* 11 */
   body.additional {
     background: url(../images/background-dark.webp);
     background-size: cover;
