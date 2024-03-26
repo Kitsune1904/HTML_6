@@ -218,7 +218,7 @@ body.additional {
   justify-content: space-between;
   align-items: center;
   height: 100vh;
-  background: url(../images/background-light.jpeg);
+  background: url(../images/background-light.webp);
   background-position: center;
   background-size: cover;
 }
@@ -499,7 +499,7 @@ footer > p {
   }
 
   body.additional {
-    background: url(../images/background-dark.png);
+    background: url(../images/background-dark.webp);
     background-size: cover;
     background-position: center;
   }
